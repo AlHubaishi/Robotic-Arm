@@ -1,0 +1,155 @@
+<html>
+<head>
+<title></title>
+</head>
+  <link rel="stylesheet" href="style.css">
+  
+<body>
+
+<div class="slidecontainer">
+
+
+        <form id="form1" action="ArmPHP.php" method = "POST" target="frame1">
+
+<fieldset>
+  <legend><center>Welcome to Robotic Arm Controllers :</center></legend>
+  
+
+
+ 
+		<div class="M1>
+		<label for="value1">Motor 1</label><input type="range" min="0" max="180" value="0" class="slider" id="myRange1" name= "M1">
+		<p>Value: <span style="color:red" id="V1"></span></p>
+		</div>
+        <script>
+
+var slider1 = document.getElementById("myRange1");
+        var output1 = document.getElementById("V1");
+        
+        output1.innerHTML = slider1.value; // Display the default slider value
+        
+        // Update the current slider value (each time you drag the slider handle)
+        slider1.oninput = function() {
+          output1.innerHTML = this.value;
+        } 
+            </script>
+
+
+	
+		<div class="M2">
+		<label for="value2">Motor 2</label><input type="range" min="0" max="180" value="0" class="slider" id="myRange2" name = "M2">
+		<p>Value: <span style="color:red"id="V2"></span></p>
+		</div>
+	<script>
+var slider2 = document.getElementById("myRange2");
+        var output2 = document.getElementById("V2");
+        output2.innerHTML = slider2.value; // Display the default slider value
+        
+        // Update the current slider value (each time you drag the slider handle)
+        slider2.oninput = function() {
+          output2.innerHTML = this.value;
+        } 
+
+
+    </script>
+		<div class="M3">
+		<label for="value3">Motor 3</label><input type="range" min="0" max="180" value="0" class="slider" id="myRange3" name="M3">
+		<p>Value: <span style="color:red"id="V3"></span></p>
+		</div>
+		<script>
+             var slider3 = document.getElementById("myRange3");
+        var output3 = document.getElementById("V3");
+        output3.innerHTML = slider3.value; // Display the default slider value
+        
+        // Update the current slider value (each time you drag the slider handle)
+        slider3.oninput = function() {
+          output3.innerHTML = this.value;
+        } 
+        </script>
+
+
+
+		<div class="M4">
+		<label for="value4">Motor 4</label><input type="range" min="0" max="180" value="0" class="slider" id="myRange4" name= "M4">
+		<p>Value: <span style="color:red" id="V4"></span></p>
+		</div>
+		<script>
+             
+        var slider4 = document.getElementById("myRange4");
+        var output4 = document.getElementById("V4");
+        output4.innerHTML = slider4.value; // Display the default slider value
+        
+        // Update the current slider value (each time you drag the slider handle)
+        slider4.oninput = function() {
+          output4.innerHTML = this.value;
+        } 
+        </script>
+
+
+		<div class="M5">
+		<label for="value5">Motor 5</label><input type="range" min="0" max="180" value="0" class="slider" id="myRange5" name= "M5">
+		<p>Value: <span style="color:red" id="V5"></span></p>
+		</div>
+		<script>
+var slider5 = document.getElementById("myRange5");
+        var output5 = document.getElementById("V5");
+        output5.innerHTML = slider5.value; // Display the default slider value
+        
+        // Update the current slider value (each time you drag the slider handle)
+        slider5.oninput = function() {
+          output5.innerHTML = this.value;
+        } 
+
+        </script>
+
+
+		<div class="M6">
+		<label for="value6">Motor 6</label><input type="range" min="0" max="180" value="0" class="slider" id="myRange6" name="M6">
+		<p>Value: <span style="color:red" id="V6"></span></p>
+		</div>
+		
+<script>
+ var slider6 = document.getElementById("myRange6");
+        var output6 = document.getElementById("V6");
+        output6.innerHTML = slider6.value; // Display the default slider value
+        
+        // Update the current slider value (each time you drag the slider handle)
+        slider6.oninput = function() {
+          output6.innerHTML = this.value;
+        } 
+
+</script>
+
+        
+        
+      
+        
+       
+
+		
+		<!-- <div class ="form-group">
+			<input type="radio" name="Statusx" value="ON" />ON
+			<input type="radio" name="Statusx" value="OFF"/>OFF
+		</div> -->
+		  <br><br>
+		  
+		  
+		  <div class="group1">
+				<label for="">Select</label> <br>
+				<input type="radio" name="Status_E" value="OFF" /> OFF
+				<input type="radio" name="Status_E" value="ON" /> ON
+          </div>
+					
+		
+		<input type="submit" value="Save" name = Save >
+
+		</form>
+		
+		
+		</div>
+		
+		</fieldset>
+
+</body>
+
+</html>
